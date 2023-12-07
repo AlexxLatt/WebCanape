@@ -1,0 +1,27 @@
+.header{
+    height: 120px;
+    &-nav{
+
+        &__wrapper{
+            height: 120px;
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            align-items: center;
+        }
+        &__item{
+      
+            font-family: Arial;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #0F488B;
+            cursor: pointer;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}

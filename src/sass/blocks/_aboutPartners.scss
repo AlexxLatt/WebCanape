@@ -1,0 +1,95 @@
+.aboutPartners{
+    height: 1050px;
+    background: #F5F5F5;
+    padding-top: 100px;
+    margin-top: 50px;
+
+    &__wrapper {
+        margin-top: 50px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,400px);
+        gap: 40px; /* Промежуток между элементами */
+    }
+    
+    &__title{
+        font-family: Arial;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #0F488B;
+
+    }
+    &__item{
+ 
+        &__icon{
+            margin-top: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        &__link{
+            padding-left: 50px;
+            margin-top: 20px;
+            background:none;
+            border: none;
+            color: #9DB0AC;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+   
+  
+
+
+        }
+        &__link:hover{
+            color: #0F488B;
+        }
+        &__desc{
+            margin: 0 auto;
+            margin-top: 50px;
+            font-family: Arial;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+            color: #3F4444;
+            width: 300px;   
+            height: 168px;
+
+
+        }
+    }
+    &__upArrow{
+        background:none;
+        border: none;
+        font-size: 20px;
+        color: #9DB0AC;
+
+    }
+    &__douwnArrow{
+        background:none;
+        border: none;
+        font-size: 20px;
+        color: #9DB0AC;
+    }
+    &__upArrow:hover{
+
+        color: #0F488B;
+
+    }
+    &__douwnArrow:hover{
+        
+        color: #0F488B;
+    }
+
+    &__item{
+        width: 400px;
+        height: 560px;
+        background: white;
+
+
+    }
+}

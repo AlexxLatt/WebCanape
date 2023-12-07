@@ -1,0 +1,159 @@
+.selection{
+    &__steps-wrapper{
+  
+        margin-top: 150px;
+      
+        &__item__divider{
+            position: absolute;
+            left: -317px;
+            top: 36.7px;
+            width: 200px;
+            height: 1px;
+            background: linear-gradient(to right, white 50%,  #F0AB00 50%);
+        }
+        &__item__divider::after{
+            content: "";
+            width: 15px;
+            height: 15px;
+            background-color: white;
+            display: inline-block;
+            border-radius: 100%;
+            position: absolute;
+            top: -5.5px;
+        }
+        &__item-first{
+            margin: 0 70%;
+            list-style: none;
+            margin-top: 40px;
+            position: relative;
+            font-family: Arial;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0em;
+            width: 440px;
+        }
+        &__item-second{
+            margin: 0 70%;
+            list-style: none;
+            margin-top: 40px;
+            position: relative;
+            font-family: Arial;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0em;
+            width: 440px;
+        }
+        &__item-third{
+            margin: 0 70%;
+            list-style: none;
+            margin-top: 40px;
+            position: relative;
+            font-family: Arial;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0em;
+            width: 440px;
+        }  
+            
+            &__item-first::before {
+                position: absolute;
+                content: "";
+                width: 75px;
+                height: 75px;
+                border-radius: 200px 200px 0 200px; /* Используйте одно значение для каждого угла: верхний левый, верхний правый, нижний правый, нижний левый */
+                background: #F0AB00;
+                display: block;
+                transform: rotate(135deg);
+                left: -120px;
+               
+            }
+            &__item-second::before {
+                position: absolute;
+                content: "";
+                width: 75px;
+                height: 75px;
+                border-radius: 200px 200px 0 200px; /* Используйте одно значение для каждого угла: верхний левый, верхний правый, нижний правый, нижний левый */
+                background: #F0AB00;
+                display: block;
+                transform: rotate(135deg);
+                left: -120px;
+               
+            }
+
+            &__item-third::before {
+                position: absolute;
+                content: "";
+                width: 75px;
+                height: 75px;
+                border-radius: 200px 200px 0 200px; /* Используйте одно значение для каждого угла: верхний левый, верхний правый, нижний правый, нижний левый */
+                background: #F0AB00;
+                display: block;
+                transform: rotate(135deg);
+                left: -120px;
+               
+            }
+            
+            &__item-first::after {
+                position: absolute;
+                content: "01";
+                left: -99px;
+                top: 22px;
+                font-family: Arial;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 27px;
+                letter-spacing: 0em;
+                color: white;
+                
+            }
+
+            &__item-second::after {
+                position: absolute;
+                content: "02";
+                top:23px;
+                left: -99px;
+                font-family: Arial;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 27px;
+                letter-spacing: 0em;
+                color: white;
+                
+            }
+
+            &__item-third::after {
+                position: absolute;
+                content: "03";
+                top:23px;
+                left: -99px;
+                font-family: Arial;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 27px;
+                letter-spacing: 0em;
+                color: white;
+                
+            }
+       
+
+      
+
+        &__img{
+            width: 940px;
+            height: 640px;
+            background: #F0AB00;
+            position: absolute;
+            top: 3000px;
+            left: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+       
+
+        }
+          
+    }
+}
