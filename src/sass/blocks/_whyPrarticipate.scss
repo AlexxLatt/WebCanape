@@ -13,9 +13,9 @@
     &__wrapper{
         margin-top: 50px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, 620px 510px 70px);
+        grid-template-columns: repeat(auto-fit,590px 470px 70px);
         grid-template-rows:240px 240px; 
-        gap:30px;
+        gap:55px;
 
         &__item:nth-child(2){
 
