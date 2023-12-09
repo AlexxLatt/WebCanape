@@ -90,6 +90,7 @@
         &__item{
             display: grid;
             grid-template-columns: repeat(auto-fit,40px 340px);
+            grid-template-rows: repeat(auto-fit,110px );
             column-gap:20px;
             &__icon{
                 width: 40px;

@@ -1,0 +1,119 @@
+.juriesAndMentors{
+    margin-top: 50px;
+    position: relative;
+    height: 1520px;
+    background-color: #F5F5F5;
+    background-repeat: no-repeat;
+
+    &__title{
+        padding-top: 80px;
+        font-family: Arial;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: 0em;
+        color: #0F488B;
+
+
+    }
+
+    &__contentWrapper{
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,930px 210px);
+        column-gap:80px;
+        justify-content: center;
+      
+        &__item{
+   
+           grid-column: 2/3;
+           z-index: 3;
+          
+           &__wrapper{
+            margin-top: 40px;
+            &__item{
+
+
+                &-title{
+                    font-family: Arial;
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: 40px;
+                    letter-spacing: 0em;
+                    color: #3F4444;
+    
+                }
+                &-desc{
+                    font-family: Arial;
+                    font-size: 17px;
+                    font-weight: 400;
+                    line-height: 27px;
+                    letter-spacing: 0em;
+                    color: #3F4444;
+    
+    
+                }
+            }
+
+           }
+           
+           
+           &__wrapper:first-child{
+            margin-top: 0px;
+           }
+        }
+
+        &__itemJuriers{
+            grid-row: 1/2;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,260px);
+            grid-template-rows: repeat(auto-fit,360px);
+            gap: 60px;
+            z-index: 3;
+            &__item{
+                background: #FFFFFF;
+                width: 290px;
+                height: 360px;
+                &__title{
+                    margin-top: 15px;
+                    font-family: Arial;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: #3F4444;
+
+                }
+                &__desc{
+                    margin-top: 15px;
+                    font-family: Arial;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: #9DB0AC;
+
+                }
+                &__img{
+                    margin-top: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items:center;
+                }
+            }
+        }
+       
+    }
+}
+.juriesAndMentors::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%; 
+    background-color: #F0AB00;
+    z-index: 2;
+}

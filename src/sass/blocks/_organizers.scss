@@ -1,0 +1,31 @@
+.organizers{
+    background: #F5F5F5;
+    height:500px;
+    &__title{
+        padding-top: 130px;
+        font-family: Arial;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: 0em;
+        color: #0F488B;
+
+
+    }
+    &__wrapper{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 280px);
+        column-gap: 40px;
+        &__item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 280px;
+            height: 160px;
+            background: #FFFFFF;
+
+
+        }
+    }
+}
