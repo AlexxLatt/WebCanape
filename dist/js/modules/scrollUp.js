@@ -4,12 +4,12 @@ function scrollUp(){
     window.addEventListener('scroll', function() {
         if (window.pageYOffset + document.documentElement.clientHeight >= 3500 ) // высота прокрутки сайта + количество пикселей, которые видны на экране без прокрутки >= высоты всей страницы, включая ту часть, которая не видна из-за прокрутки
         {
-            scroll.style.display = "block"; 
+            scroll.classList.add("active");
 
         }
         if (window.pageYOffset + document.documentElement.clientHeight <= 2500 ) // высота прокрутки сайта + количество пикселей, которые видны на экране без прокрутки >= высоты всей страницы, включая ту часть, которая не видна из-за прокрутки
         {
-            scroll.style.display = "none"; 
+            scroll.classList.remove("active");
 
         }
     });

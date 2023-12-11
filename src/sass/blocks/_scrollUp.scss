@@ -5,9 +5,11 @@
     border-radius: 100%;    
     background: #9DB0AC;
     z-index: 15;
-    display: none;
+    visibility: hidden;
+    opacity: 0.0;
     top:90%;
     left: 95%;
+    transition: all 0.3s;
     &__btn{
         border:none;
         background:none;
@@ -15,4 +17,9 @@
         height:60px;
         border-radius: 100%;  
     }
+}
+.active{
+    visibility: visible;
+    opacity: 1;
+    display: block;
 }

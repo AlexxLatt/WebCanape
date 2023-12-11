@@ -79,8 +79,6 @@ function forms() {
     `;
     modalSecond.addEventListener('click', e => {
       if (e.target.getAttribute('data-close') === '') {
-        modalSecond.classList.add("hide");
-        modalSecond.classList.remove("show");
         modal.classList.remove("show");
         document.body.style.removeProperty("overflow");
         modalSecond.remove();
@@ -91,6 +89,23 @@ function forms() {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (forms);
+
+/***/ }),
+
+/***/ "./src/js/modules/mask.js":
+/*!********************************!*\
+  !*** ./src/js/modules/mask.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function mask() {
+  $('input[name=phone]').mask("+7 (999) 999-99-99");
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (mask);
 
 /***/ }),
 
@@ -110,12 +125,12 @@ function scrollUp() {
     if (window.pageYOffset + document.documentElement.clientHeight >= 3500)
       // высота прокрутки сайта + количество пикселей, которые видны на экране без прокрутки >= высоты всей страницы, включая ту часть, которая не видна из-за прокрутки
       {
-        scroll.style.display = "block";
+        scroll.classList.add("active");
       }
     if (window.pageYOffset + document.documentElement.clientHeight <= 2500)
       // высота прокрутки сайта + количество пикселей, которые видны на экране без прокрутки >= высоты всей страницы, включая ту часть, которая не видна из-за прокрутки
       {
-        scroll.style.display = "none";
+        scroll.classList.remove("active");
       }
   });
   let scrollSecond = document.querySelector(".scrollUp__btn");
@@ -400,12 +415,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_stages__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/stages */ "./src/js/modules/stages.js");
 /* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/tabs */ "./src/js/modules/tabs.js");
 /* harmony import */ var _modules_scrollUp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/scrollUp */ "./src/js/modules/scrollUp.js");
+/* harmony import */ var _modules_mask__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/mask */ "./src/js/modules/mask.js");
+
 
 
 
 
 
 window.addEventListener("DOMContentLoaded", () => {
+  (0,_modules_mask__WEBPACK_IMPORTED_MODULE_5__["default"])();
   (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_3__["default"])();
   (0,_modules_slider__WEBPACK_IMPORTED_MODULE_0__["default"])();
   (0,_modules_forms__WEBPACK_IMPORTED_MODULE_1__["default"])();

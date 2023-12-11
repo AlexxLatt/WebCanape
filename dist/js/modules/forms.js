@@ -19,7 +19,7 @@ function forms(){
         btn.addEventListener("click", (event) => {
             console.log("Ты нажал на кнопку!!");
             document.body.style.overflow = 'hidden';
-            modal.classList.remove("hide")
+            modal.classList.remove("hide");
             modal.classList.add("show");
             modalDialog.classList.add("show");
             modalDialog.classList.remove("hide");
@@ -76,8 +76,6 @@ function forms(){
     `;
         modalSecond.addEventListener('click', (e) => {
             if (e.target.getAttribute('data-close') === '') {
-                modalSecond.classList.add("hide");
-                modalSecond.classList.remove("show");
                 modal.classList.remove("show");
                 document.body.style.removeProperty("overflow");
                 modalSecond.remove();
