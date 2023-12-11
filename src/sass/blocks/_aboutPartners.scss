@@ -30,21 +30,25 @@
           align-items: center;
           justify-content: center;
         }
-        &__link{
-            padding-left: 50px;
-            margin-top: 20px;
-            background:none;
-            border: none;
-            color: #9DB0AC;
-            font-family: Arial;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-   
-  
+        &__wrapper{
 
-
+            &__link{
+                margin-left: 47px;
+                margin-top: 20px;
+                background:none;
+                border: none;
+                color: #9DB0AC;
+                font-family: Arial;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+       
+      
+    
+    
+            }
         }
+        
         &__link:hover{
             color: #0F488B;
         }
@@ -62,28 +66,7 @@
 
         }
     }
-    &__upArrow{
-        background:none;
-        border: none;
-        font-size: 20px;
-        color: #9DB0AC;
-
-    }
-    &__douwnArrow{
-        background:none;
-        border: none;
-        font-size: 20px;
-        color: #9DB0AC;
-    }
-    &__upArrow:hover{
-
-        color: #0F488B;
-
-    }
-    &__douwnArrow:hover{
-        
-        color: #0F488B;
-    }
+ 
 
     &__item{
         width: 400px;
@@ -91,5 +74,57 @@
         background: white;
 
 
+    }
+    &__wrapper-information{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns:  20px 280px;
+        grid-template-rows:  30px 30px;
+        justify-content: center;
+        &__upArrow{
+            background:none;
+            border: none;
+            font-size: 20px;
+            color: #9DB0AC;
+    
+        }
+        &__douwnArrow{
+            background:none;
+            border: none;
+            font-size: 20px;
+            color: #9DB0AC;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        &__upArrow:hover{
+    
+            color: #0F488B;
+    
+        }
+        &__douwnArrow:hover{
+            
+            color: #0F488B;
+        }
+        &__text{
+            padding-left: 20px;
+            grid-row: 1/3;
+            line-height: 55px;
+            font-family: Arial;
+            font-size: 40px;
+            font-weight: 700;
+            color: #9DB0AC;
+            text-align: left;
+            &-second{
+                padding-left: 20px;
+                font-family: Arial;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                color: #9DB0AC;
+                text-align: left;
+                grid-column: 2/3;
+            }
+        }
     }
 }

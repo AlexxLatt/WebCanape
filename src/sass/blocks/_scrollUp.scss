@@ -1,0 +1,18 @@
+.scrollUp{
+    position: fixed;
+    width:60px;
+    height:60px;
+    border-radius: 100%;    
+    background: #9DB0AC;
+    z-index: 15;
+    display: none;
+    top:90%;
+    left: 95%;
+    &__btn{
+        border:none;
+        background:none;
+        width:60px;
+        height:60px;
+        border-radius: 100%;  
+    }
+}
